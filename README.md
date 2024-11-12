@@ -1,15 +1,22 @@
-# Namaste-React
+# Namaste-React - Day 01
 
-# Namaste-React
+This repository contains the first-day learning notes and code examples for React. The focus is on using React with a CDN, understanding basic concepts like creating React elements, and using the `render()` method.
 
-This repository contains notes and code examples for Day 01 of learning React. It covers the basics such as including React via CDN, understanding cross-origin issues, creating the root element, using `React.createElement()`, and understanding the `render()` method.
+## Overview
 
-## DAY 01
+### What you will learn:
+1. How to include React via CDN.
+2. The concept of **Cross-Origin**.
+3. How to create a **Root element** where React will render.
+4. Understanding `React.createElement()` and its role.
+5. How to use the `render()` method in React.
 
-### 1. CDN of React
+### CDN for React
 
-To quickly get started with React without installing anything, we can use the CDN links for React and ReactDOM.
+On Day 1, we start by including React and ReactDOM using CDN links. This allows you to use React without having to install anything.
 
-- **Core React**:  
-  ```html
+```html
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
