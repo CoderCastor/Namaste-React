@@ -2,7 +2,7 @@
   "name": "day-02---igniting-your-app",
   "version": "1.0.0",
   "description": "This is day two to learn bundlers with Igniting our app.",
-  "main": "App.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
