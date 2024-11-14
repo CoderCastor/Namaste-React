@@ -55,4 +55,18 @@ const ReactComponents = () => (
 );
 
 // root.render(ReactComponents) //It is valid for ReactElements only, not valid for ReactComponents babel understands <ReactComponents/>
-root.render(<ReactComponents/>)
+// root.render(<ReactComponents/>)
+
+//Components Compositions
+const Title = () => <h1>This is title Component</h1>
+
+const Mainheading = () => {
+  return (
+    <div>
+      <Title/>
+      <h1>Namaste React</h1>
+    </div>
+  )
+}
+
+root.render(<Mainheading/>);
