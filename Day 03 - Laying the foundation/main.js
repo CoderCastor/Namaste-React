@@ -60,10 +60,30 @@ const ReactComponents = () => (
 //Components Compositions
 const Title = () => <h1>This is title Component</h1>
 
+//these are valid same
+// {Title()}
+// <Title/>
+// <Title></Title>
+const elem = (
+  <div>
+    This is Basic App div
+    <h1>
+      This is H1 in It
+      
+    </h1>
+    <div>
+    this is title --- {Title()}
+    <Title/>
+    <Title></Title>
+    </div>
+  </div>
+)
+
 const Mainheading = () => {
   return (
     <div>
-      <Title/>
+      {/* <Title/> */}
+      {elem}
       <h1>Namaste React</h1>
     </div>
   )
