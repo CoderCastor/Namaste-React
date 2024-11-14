@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const heading = React.createElement("h1",{},"Hello I'am Working");
 
-root.render(heading); 
+// root.render(heading); 
  
 //React Functional component
 // noraml writting best from akshay sir
@@ -36,3 +36,23 @@ const HeadingComponent3 = () => (
     </div>
   </div>
 );
+
+//React Element vs React components
+const reactElement = (
+  <div className='parent'>
+    <div className='child'>
+      <h1>Namaste React</h1>
+    </div>
+  </div>
+);
+
+const ReactComponents = () => (
+  <div className='parent'>
+    <div className='child'>
+      <h1>Namaste React</h1>
+    </div>
+  </div>
+);
+
+// root.render(ReactComponents) //It is valid for ReactElements only, not valid for ReactComponents babel understands <ReactComponents/>
+root.render(<ReactComponents/>)
