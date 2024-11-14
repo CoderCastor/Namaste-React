@@ -11,19 +11,28 @@ const heading = React.createElement("h1",{},"Hello I'am Working");
 root.render(heading); 
  
 //React Functional component
-// noraml writting 
-const headingComponent = () => {
+// noraml writting best from akshay sir
+const HeadingComponent = () => {
   return (
     <h1>Namaste React</h1>
   )
 }
 
 //writing valid style 1 - for single line
-const headingComponent1 = () => <h1>Namaste React</h1>
+const HeadingComponent1 = () => <h1>Namaste React</h1>
 
 //writing valid style 2 - for mult lines
-const headingComponent2 = () => (
+const HeadingComponent2 = () => (
   <h1>
     Namaste React
   </h1>
+);
+
+//nested tags
+const HeadingComponent3 = () => (
+  <div className='parent'>
+    <div className='child'>
+      <h1>Namaste React</h1>
+    </div>
+  </div>
 );
