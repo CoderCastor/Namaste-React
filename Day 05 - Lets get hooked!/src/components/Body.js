@@ -1,3 +1,4 @@
+import { resData } from "../utils/mochData";
 import RestaurantCard from "./RestaurantCard";
 
 const Body = () => {
@@ -5,7 +6,7 @@ const Body = () => {
         <div className="body">
             <div className="s earch">Search</div>
             <div className="res-container">
-                <RestaurantCard/>          
+                {resData.map(rest=><RestaurantCard data={rest} />)}          
             </div>
 
         </div>
