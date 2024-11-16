@@ -158,6 +158,5 @@ export const resData = [
     "price": "$$",
     "distance": "1.9 km",
     "image": "219"
-    
   }
 ]
